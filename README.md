@@ -69,28 +69,28 @@ Foram cadastrados três produtos pelo menu **1. Inserir**: Teclado Mecânico,
 Mouse Gamer e Monitor 24. A grade exibe os três registros e a barra de status
 confirma a inserção. O `Id` é gerado automaticamente pelo banco (`IDENTITY`).
  
-![Print 1 - Inserir](Print%201.png)
+![Print 1 - Inserir](Prints/Print%201.png)
  
 ## Print 2 — Buscar produto por ID
 Busca do produto de **Id 2** pelo menu **3. Buscar por ID**. A grade passa a
 mostrar somente o registro encontrado e os campos do formulário são preenchidos
 com seus dados. A consulta usa `ExecuteReader` com o parâmetro `@Id`.
  
-![Print 2 - Buscar por ID](Print%202.png)
+![Print 2 - Buscar por ID](Prints/Print%202.png)
  
 ## Print 3 — Atualizar produto
 Atualização do produto de **Id 2** pelo menu **4. Atualizar**, alterando preço
 e estoque. A grade mostra os valores novos após a operação, executada com
 `ExecuteNonQuery` e comando `UPDATE` parametrizado (com `WHERE Id = @Id`).
  
-![Print 3 - Atualizar](Print%203.png)
+![Print 3 - Atualizar](Prints/Print%203.png)
  
 ## Print 4 — Excluir produto
 Exclusão do produto de **Id 3** pelo menu **5. Excluir**, após confirmação do
 usuário. A grade deixa de exibir o registro removido. A operação usa
 `ExecuteNonQuery` com `DELETE ... WHERE Id = @Id`.
  
-![Print 4 - Excluir](Print%204.png)
+![Print 4 - Excluir](Prints/Print%204.png)
  
 ---
  
